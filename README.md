@@ -30,7 +30,7 @@ $startx
 Enjoy.
 
 If you want patches go to official suckless git repo to get patches.
+
 <a href="https://github.com/kupababra/dwm-immortale/1.jpg" target="_blank">
-    
     <img src="1.jpg" alt="Gentoo Pulpit Scrot Image" width="300">
 </a>
