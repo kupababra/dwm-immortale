@@ -1,0 +1,59 @@
+#!/bin/sh
+# This file work on Gentoo Linux. If you want run on diffrent os, change some stuff ;)
+# Skrypt wymaga pakietu font-awesome do poprawnej pracy.
+# On gentoo you need to install some fonts run command: doas emerge -av media-fonts/fontawesome 
+#####################################################
+# https://github.com/kupababra/dwm-immortale/dwmicon#
+# ###################################################
+
+
+data(){
+        data="$(date +"%a, %b %d %R")"
+        echo "$data"
+}
+
+dysk(){
+        dysk="$(df -h /home | grep dev | awk '{print$3, " "  $5}')"
+        echo "  $dysk"
+}
+
+memory(){
+        memory="$(free -m | awk 'NR==2{printf "MEM: %s/%sMB (%.2f%%)\n", $3,$2,$3*100/$2 }')"
+        echo "  $memory"
+}
+
+cpu() {
+    read cpu a b c previdle rest < /proc/stat
+      prevtotal=$((a+b+c+previdle))
+        sleep 0.5
+          read cpu a b c idle rest < /proc/stat
+            total=$((a+b+c+idle))
+              cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
+                echo "  $cpu% "
+}
+
+
+jajco(){
+	jajco="$(uname -r | sed "s/-amd64//g")"
+	echo "   $jajco" 
+}
+
+bateria() {
+	battery="$(cat /sys/class/power_supply/BATT/capacity)"
+	echo " $battery %"
+}
+
+batstat() {
+	bstat="$(cat /sys/class/power_supply/BATT/status)"
+	echo "$bstat"
+}
+
+status(){
+        echo "$(cpu) | $(memory) | $(jajco) | $(dysk) | $(data) | $(bateria)"
+}
+
+
+while true; do
+	xsetroot -name "$(status)"
+	sleep 10s 
+done
