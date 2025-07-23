@@ -14,7 +14,13 @@ Don't forget install rofi or dmenu, terminal like - st,kitty or alacritty.
 
 edit /home/user/.xinitrc via vi,vim or your favourite text editor.
 
-put to file .xinitrc text: exec dwm 
+mv dwmicon to /usr/bin/
+
+put to file .xinitrc text: 
+
+exec /usr/bin/dwmicon &
+
+exec dwm 
 
 then save file and run:
 
