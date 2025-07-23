@@ -1,2 +1,2 @@
 # dwm-immortale
-Simple dwm script for X.
+Simple dwm script for X uses on Gentoo Linux.
