@@ -10,5 +10,12 @@ I don't remember if you'll need to install:
 
 Nerd Fonts or Awesome Fonts, but I think so.
 
+Don't forget install rofi or dmenu, terminal like - st,kitty or alacritty.
+
+edit /home/user/.xinitrc via vi,vim or your favourite text editor.
+
+$startx
+
 Enjoy.
 
+If you want patches go to official suckless git repo to get patches.
