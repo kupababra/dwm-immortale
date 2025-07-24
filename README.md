@@ -1,11 +1,11 @@
-<h1>Simple dwm script for X uses on Gentoo Linux.</h1>
+<h2>Simple dwm script for X uses on Gentoo Linux.</h2>
 <p>First read the source code RTSC ;) any question bofh@retro-technology.pl</p>
 <p><img alt="" src="dwm.png" /></p>
 <p><a href="https://dwm.suckless.org/">DWM</a> is a dynamic window manager for X. It manages windows in tiled, monocle and floating layouts. All of the layouts can be applied dynamically, optimising the environment for the application in use and the task performed.</p>
 <h3>Installation unofficial:</h3>
 <p>Unpack dwm-immortale.tar, edit config.h and config.def.h
 Change fonts, and whatever you want to use dwm.
-Sownload the file dwmicon separately from the dwm-immortale directory, because I did not put it in the package.
+Download the file dwmicon separately from the dwm-immortale directory, because I did not put it in the package.
 Edit dwmicon for sure this script work on Gentoo Linux, then run:</p>
 <p><code>doas mv dwmicon /usr/bin/</code></p>
 <p>Run compile dwm:</p>
