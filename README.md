@@ -1,6 +1,8 @@
 # dwm-immortale
 Simple dwm script for X uses on Gentoo Linux.
 
+First read the source code RTSC ;) any question bofh@retro-technology.pl
+
 Instructions:
 - unpack dwm-immortale.tar, edit config.h and config.def.h
 - change fonts, and whatever you want to use dwm.
