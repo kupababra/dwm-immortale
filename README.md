@@ -21,7 +21,7 @@ edit /home/user/.xinitrc via vi,vim or your favourite text editor.
 
 put to file .xinitrc text: 
 
-exec /usr/bin/dwmicon &
+/usr/bin/dwmicon &
 
 exec dwm 
 
