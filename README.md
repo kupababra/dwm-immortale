@@ -19,7 +19,7 @@ Don't forget install rofi or dmenu, terminal like - st,kitty or alacritty.</h3>
 <p><code>exec dwm</code></p>
 <p>then save file and run command:</p>
 <p><code>startx</code></p>
-<h3>Enjoy.If you want patches go to official suckless git repo to get patches.</h3<p>
+<h3>Enjoy.If you want patches go to official suckless git repo to get patches.</h3><p>
 <img src="1.png" alt="scrot of dwm" width="500" height="600"> </p>
 
 
